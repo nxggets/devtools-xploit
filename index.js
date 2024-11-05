@@ -1,7 +1,8 @@
 const WebSocket = require('ws');
 const fs = require('fs').promises;
 const path = require('path');
-const wss = new WebSocket.Server({ port: 8080 });
+const port = "8080"
+const wss = new WebSocket.Server({ port: port });
 
 wss.on('connection', (client) => {
     console.log('Client connected');
@@ -52,4 +53,6 @@ wss.on('error', (error) => {
     console.error('WebSocket server error:', error);
 });
 
-console.log('WebSocket server is running on ws://localhost:8080');
+
+console.log('oooooooooo.   ooooooo  ooooo \r\n`888\'   `Y8b   `8888    d8\'  \r\n 888      888    Y888..8P    \r\n 888      888     `8888\'     \r\n 888      888    .8PY888.    \r\n 888     d88\'   d8\'  `888b   \r\no888bood8P\'   o888o  o88888o \r\n');
+console.log('\u001b[32m' + 'CURRENT PORT: ' + port)
